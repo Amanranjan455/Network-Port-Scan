@@ -34,16 +34,15 @@ Apply filter to view SYN packets: tcp.flags.syn==1 && tcp.flags.ack==0
 
 5. Research Common Services on Open Ports
 Identify what services run on discovered ports.
-Examples:
-  | Port | Service | Description          |
-  |------|---------|----------------------|
-  | 22   | SSH     | Remote Shell         |
-  | 80   | HTTP    | Web Server           |
-  | 443  | HTTPS   | Secure Web Server    |
-  | 445  | SMB     | Windows File Sharing |
-  | 3389 | RDP     | Remote Desktop       |
 
-6. Identify Potential Security Risks
+Examples:
+Port 22 is used for SSH (Secure Shell), which provides remote shell access to devices. It is commonly used by system administrators to securely manage servers and devices over a network.
+Port 80 is used for HTTP (Hypertext Transfer Protocol), which is the standard protocol for accessing websites and web servers in an unencrypted format.
+Port 443 is used for HTTPS (Hypertext Transfer Protocol Secure), which provides secure, encrypted communication over the web. It ensures data transmitted between the client and server is protected.
+Port 445 is used for SMB (Server Message Block), which is a protocol primarily used for Windows file and printer sharing over a network. It allows devices to share resources like files and printers.
+Port 3389 is used for RDP (Remote Desktop Protocol), which allows users to remotely access and control Windows machines through a graphical interface.
+
+7. Identify Potential Security Risks
 Unnecessary open ports can be exploited.
 Examples of risks:
 SSH (22):Brute-force attacks.
@@ -55,7 +54,7 @@ RDP (3389):Unauthorized remote access.
  1. Nmap  
  2. Wireshark (optional)  
 
-✅ **Conclusion
+✅ Conclusion
 Local network scanning helps identify vulnerabilities, providing an opportunity to strengthen network security before attackers exploit weaknesses.
 
 
